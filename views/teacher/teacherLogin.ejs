@@ -1,0 +1,27 @@
+<a href="/" class="btn btn-primary" style="margin-top:10px;"> Go Back</a>
+<h3>Teacher Login</h3>
+
+  <img src="/images/teacher.jpg"  alt="Teacher" class="avatar">
+
+<div class="teachLog">
+  <form method="POST" class="teachForm">
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password : </label>
+      <input type="password" name="password"  class="form-control" id="pass">
+      <br>
+      <input type="checkbox" style="width: 30px;" onclick="myFunction()">Show Password
+      <br>
+    </div>
+    <a><button  id="btn5"type="submit" class="btn btn-primary">Submit</button></a>
+  </form>
+</div>
+<script>
+  function myFunction() {
+  var x = document.getElementById("pass");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
